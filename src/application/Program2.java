@@ -2,6 +2,7 @@ package application;
 
 import java.util.List;
 
+import db.DB;
 import model.dao.DaoFactory;
 import model.dao.DepartmentDao;
 import model.entities.Department;
@@ -35,7 +36,7 @@ public class Program2 {
 		for (Department obj : list) {
 			System.out.println(obj);
 		}
-
+      DB.closeConnection();
 	}
 
 }
