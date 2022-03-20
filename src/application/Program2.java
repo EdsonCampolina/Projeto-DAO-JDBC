@@ -20,6 +20,9 @@ public class Program2 {
 		departmentDao.update(dep);
 		System.out.println("Update completed!");
 		
+		System.out.println("=== TEST 3: Department delete ===");
+		departmentDao.deleteById(11);
+		System.out.println("Delete completed!");
 		
 	}
 
